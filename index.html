@@ -3,36 +3,178 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>Styled Webpage</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: Arial, sans-serif;
+          }
+
+          /* Navbar Styling */
+          nav {
+               background: #007bff;
+               color: white;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding: 15px 20px;
+          }
+
+          .nav-links {
+               display: flex;
+               gap: 20px;
+          }
+
+          .nav-links a {
+               color: white;
+               text-decoration: none;
+               font-weight: bold;
+          }
+
+          .nav-links a:hover {
+               text-decoration: underline;
+          }
+
+          /* Hero Section */
+          .hero {
+               text-align: center;
+               padding: 40px;
+               background: #f4f4f4;
+          }
+
+          .hero img {
+               width: 250px;
+               border-radius: 10px;
+               margin: 10px;
+          }
+
+          .hero a {
+               display: inline-block;
+               background: #007bff;
+               color: white;
+               padding: 10px 15px;
+               margin-top: 10px;
+               border-radius: 5px;
+               text-decoration: none;
+          }
+
+          .hero a:hover {
+               background: #0056b3;
+          }
+
+          /* Table Section */
+          .table-container {
+               display: flex;
+               justify-content: center;
+               margin: 20px 0;
+          }
+
+          table {
+               width: 50%;
+               border-collapse: collapse;
+               text-align: left;
+               border: 2px solid #007bff;
+               background: white;
+          }
+
+          th, td {
+               padding: 10px;
+               border: 1px solid #007bff;
+          }
+
+          th {
+               background: #007bff;
+               color: white;
+          }
+
+          /* Form Section */
+          .form-container {
+               text-align: center;
+               margin: 20px;
+               padding: 20px;
+          }
+
+          input {
+               padding: 10px;
+               width: 80%;
+               border: 1px solid #007bff;
+               border-radius: 5px;
+               margin-top: 10px;
+          }
+
+          button {
+               background: #007bff;
+               color: white;
+               border: none;
+               padding: 10px 15px;
+               cursor: pointer;
+               border-radius: 5px;
+               font-weight: bold;
+               margin-top: 10px;
+          }
+
+          button:hover {
+               background: #0056b3;
+          }
+
+          /* Footer */
+          footer {
+               text-align: center;
+               background: #007bff;
+               color: white;
+               padding: 15px;
+               margin-top: 20px;
+          }
+
+     </style>
 </head>
 <body>
-     <header>
-          <h1>Navbar</h1>
-          <p>
-               Home
-          </p>
-          <div>about</div>
-          
-          <button>profile</button>
 
-     </header>
-     <a href="google.com">Google</a><br>
-     <img src="img.jpg" alt="image">
-     <section>
-     <form action="post">
-          <table style="border: 2px solid;">
-               <th>name</th>
-               <td>Aditya</td>
-               <tr>Roll</tr>
-               <td>2023btcs229</td>
+     <!-- Navbar -->
+     <nav>
+          <h1>My Website</h1>
+          <div class="nav-links">
+               <a href="#">Home</a>
+               <a href="#">About</a>
+               <a href="#">Profile</a>
+          </div>
+     </nav>
 
-          </table>
-          <input type="text" placeholder="Enter your name"><br>
-          <span>Hello</span>
-     </form>
+     <!-- Hero Section -->
+     <section class="hero">
+          <h2>Welcome to My Website</h2>
+          <img src="img.jpg" alt="Image">
+          <p>Explore more by clicking below</p>
+          <a href="https://www.google.com" target="_blank">Visit Google</a>
      </section>
+
+     <!-- Table Section -->
+     <div class="table-container">
+          <table>
+               <tr>
+                    <th>Name</th>
+                    <td>Aditya</td>
+               </tr>
+               <tr>
+                    <th>Roll</th>
+                    <td>2023BTCS229</td>
+               </tr>
+          </table>
+     </div>
+
+     <!-- Form Section -->
+     <div class="form-container">
+          <h3>Enter Your Details</h3>
+          <input type="text" placeholder="Enter your name"><br>
+          <button>Submit</button>
+     </div>
+
+     <!-- Footer -->
      <footer>
-          <h5>This is a basic html tags website</h5>
+          <p>&copy; 2025 My Website. All Rights Reserved.</p>
      </footer>
+
 </body>
 </html>
